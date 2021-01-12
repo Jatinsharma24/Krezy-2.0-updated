@@ -33,12 +33,6 @@ module.exports = {
           .addField("📁 Users", `${client.users.cache.size}`, true)
           .addField("📁 Servers", `${client.guilds.cache.size}`, true)
           .addField("📁 Channels ", `${client.channels.cache.size}`, true)
-          .addField("👾 Discord.js", `v${version}`, true)
-          .addField("🤖 Node", `${process.version}`, true)
-          .addField("🤖 CPU", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
-          .addField("🤖 CPU usage", `\`${percent.toFixed(2)}%\``, true)
-          .addField("🤖 Arch", `\`${os.arch()}\``, true)
-          .addField("💻 Platform", `\`\`${os.platform()}\`\``, true)
           .addField("API Latency", `${(client.ws.ping)}ms`)  
       message.channel.send(botinfo)
   });

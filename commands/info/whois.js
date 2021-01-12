@@ -4,7 +4,7 @@ const moment = require("moment")
 module.exports = {
   name: "whois",
   aliases: ["userinfo"],
-  category: "<:info:773053660380135424>info",
+  category: "info",
   description: "Get info of any user",
   run: async (client, message, args) => {
     
@@ -18,10 +18,10 @@ module.exports = {
         target = message.author
       }
     
-    if (target.presence.status === "dnd") target.presence.status = "Do Not Disturb <:DoNotDisturb:733303060989739100>";
-    if (target.presence.status === "idle") target.presence.status = "Idle <:IdleIcon:733303179181293608>";
-    if (target.presence.status === "online") target.presence.status = "Online <:3619_discord_online:733302876222521385>";
-    if (target.presence.status === "offline") target.presence.status = "Offline <:3268_discord_invisible:733303333057593344>";
+    if (target.presence.status === "dnd") target.presence.status = "Do Not Disturb ";
+    if (target.presence.status === "idle") target.presence.status = "Idle;
+    if (target.presence.status === "online") target.presence.status = "Online";
+    if (target.presence.status === "offline") target.presence.status = "Offline";
     
     function game() {
       let game;
