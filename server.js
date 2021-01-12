@@ -22,7 +22,7 @@ client.aliases = new discord.Collection();
 
 client.on("ready", () => {
   console.log(` ${client.user.username} is turned on`);
-  client.user.setActivity(`qhelp`,{type:"STREAMING"});
+  client.user.setActivity(`+help`,{type:"PLAYING"});
 });
 
 client.on("message", async message => {

@@ -28,11 +28,10 @@ module.exports = {
           .setAuthor(client.user.username)
           .setTitle("__**Stats:**__")
           .setColor("RANDOM")
-          .addField("⏳ Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
-          .addField("⌚️ Uptime ", `${duration}`, true)
           .addField("📁 Users", `${client.users.cache.size}`, true)
           .addField("📁 Servers", `${client.guilds.cache.size}`, true)
           .addField("📁 Channels ", `${client.channels.cache.size}`, true)
+          .addField("⌚️ Uptime ", `${duration}`, true)
           .addField("API Latency", `${(client.ws.ping)}ms`)  
       message.channel.send(botinfo)
   });

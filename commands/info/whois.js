@@ -18,8 +18,8 @@ module.exports = {
         target = message.author
       }
     
-    if (target.presence.status === "dnd") target.presence.status = "Do Not Disturb ";
-    if (target.presence.status === "idle") target.presence.status = "Idle;
+    if (target.presence.status === "dnd") target.presence.status = "Do Not Disturb";
+    if (target.presence.status === "idle") target.presence.status = "Idle";
     if (target.presence.status === "online") target.presence.status = "Online";
     if (target.presence.status === "offline") target.presence.status = "Offline";
     
@@ -50,31 +50,31 @@ module.exports = {
     .setThumbnail(avatar)
     .setDescription(
       `
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Name:** 
+>** Name:** 
 ${target.username}
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ ID:** 
+>** ID:** 
 ${target.id}
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Nickname:** 
+>** Nickname:** 
 ${nickname}
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Account Creation:** 
+>** Account Creation:** 
 ${createdate} | ${created} day(s) ago
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Server Joined At:** 
+>** Server Joined At:** 
 ${joindate} | ${joined} day(s) ago
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Status:** 
+>** Status:** 
 ${status}
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Game:** 
+>** Game:** 
 ${game()}
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Badges:** 
+>** Badges:** 
 ${flags}
 
-> <a:Exe_nitroboostjaune:743845032083324938>**❯ Roles:** 
+>** Roles:** 
 <@&${member._roles.join('> <@&')}>`)
     .setColor("RANDOM")
     .setFooter(`Asked by ${message.author.username}`, aicon  )
