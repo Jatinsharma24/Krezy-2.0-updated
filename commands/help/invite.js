@@ -8,9 +8,9 @@ module.exports = {
     
     let embed = new discord.MessageEmbed()
     .setTitle(`HERE INVITE LINK OF BOT`)
-    .setDescription(`<a:verify:743830477818953768>[CLICK HERE](https://discord.com/api/oauth2/authorize?client_id=744597377406599188&permissions=8&scope=bot) OR [support server ](https://discord.gg/RJ2SRN2cVu)`)
+    .setDescription(`[CLICK HERE](https://discord.com/api/oauth2/authorize?client_id=744597377406599188&permissions=8&scope=bot) OR [support server ](https://discord.gg/RJ2SRN2cVu)`)
     .setColor("RANDOM")
-    .setFooter(`BOT MADE BY KHANMANAN#1000`)
+    .setFooter(`BOT MADE BY Bunny`)
     .setTimestamp(message.timestamp = Date.now())
     
     message.channel .send(embed)
