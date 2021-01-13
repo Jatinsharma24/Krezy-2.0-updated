@@ -8,6 +8,7 @@ module.exports = {
 description: "Sends a random image of a cat",
 usage: "[command]",
 run: async (client, message, args, level) => {
+  message.delete();
 //command
 superagent.get('https://nekos.life/api/v2/img/meow')
     .end((err, response) => {

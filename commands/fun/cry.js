@@ -7,13 +7,14 @@ module.exports = {
   category: "fun",
   description: "Cry with gif",
   run: async (client, message, args) => {
+    message.delete();
     
     let data = await random.getAnimeImgURL("cry");
     
     let embed = new discord.MessageEmbed()
     .setImage(data)
     .setColor("RANDOM")
-    .setFooter(`Please talk with ${message.author.username} they are crying`)
+    .setFooter(`Please talk with ${message.author.username} is crying`)
     .setTimestamp()
     
     message.channel.send(embed);

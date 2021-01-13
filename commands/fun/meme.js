@@ -9,6 +9,8 @@ module.exports = {
     description: "Send A Meme!",
     usage: "Meme",
     run: async (client, message, args) => {
+      
+      message.delete();
 
         //Start
 

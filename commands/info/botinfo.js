@@ -8,15 +8,14 @@ let os = require('os')
 let cpuStat = require("cpu-stat")
 const ms = require("ms")
 
-
-
-
 module.exports = {
     name: "botinfo",
     category: "info",
   description: "Sends detailed info about the client",
   usage: "[command]",
   run: async (client, message, args) => {
+    message.delete();
+    
   //command
   let cpuLol;
   cpuStat.usagePercent(function(err, percent, seconds) {

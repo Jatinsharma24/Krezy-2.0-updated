@@ -7,6 +7,7 @@ module.exports = {
   category: "fun",
   description: "Slap someone",
   run: async (client, message, args) => {
+    message.delete();
     
     let target = message.mentions.members.first()
     

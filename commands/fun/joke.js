@@ -7,6 +7,8 @@ module.exports = {
   description: "Get some fun jokes",
   run: async (client, message, args) => {
     
+    message.delete();
+    
     let data = await random.getJoke()
     message.channel.send(data)
     

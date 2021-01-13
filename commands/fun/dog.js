@@ -9,6 +9,7 @@ module.exports = {
 description: "Sends a random dog image",
 usage: "[command]",
 run: async (client, message, args) => {
+  message.delete();
 //command
 superagent.get('https://nekos.life/api/v2/img/woof')
     .end((err, response) => {
@@ -16,7 +17,7 @@ superagent.get('https://nekos.life/api/v2/img/woof')
   .setTitle("<a:dog1:730389376210829344>")
   .setImage(response.body.url)
   .setColor(`#000000`)
-  .setFooter(`🤣WHAT A DOG🤣`)
+  .setFooter(`Doggy`)
   .setURL(response.body.url);
 message.channel.send(lewdembed);
 })

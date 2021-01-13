@@ -6,6 +6,8 @@ module.exports = {
   category: "info",
   usage: "pokemon <name>",
   run (client, message, args) {
+    
+    message.delete();
 
 
 const options = {
@@ -14,7 +16,7 @@ const options = {
   
 }
 
-message.channel.send(`<a:Exe_Nitro3:743845033475702794>Fetching Informtion for the Pokemon`).then(msg => {
+message.channel.send(`Informtion for the Pokemon`).then(msg => {
   get(options).then(body => {
     
     let embed = new MessageEmbed()

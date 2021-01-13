@@ -7,6 +7,8 @@ module.exports = {
   description: "Get avatar of the server",
   run: async (client, message, args) => {
     
+    message.delete();
+    
     let embed = new discord.MessageEmbed()
     
       embed.setDescription(`[Download](${message.guild.iconURL({ dynamic: true, size: 1024 })})`)

@@ -6,6 +6,8 @@ module.exports = {
   description: "Get your id",
   run: async (client, message, args) => {
     
+    message.delete();
+    
     let embed = new discord.MessageEmbed()
     .setDescription(
     `

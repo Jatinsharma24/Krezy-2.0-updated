@@ -6,6 +6,7 @@ module.exports = {
   category: "info",
   description: "Get dp of any user",
   run: async (client, message, args) => {
+    message.delete();
     
     let target
     

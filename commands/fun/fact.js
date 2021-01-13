@@ -9,6 +9,7 @@ module.exports = {
   description: "sends a cool fact",
   usage: "[command]",
   run: async (client, message, args) => {
+    message.delete();
   //command
 
     async function work() {

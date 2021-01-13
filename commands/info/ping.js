@@ -6,6 +6,8 @@ module.exports = {
   description: "Returns latency and API ping",
   run: async (client, message, args) => {
     
+    message.delete();
+    
     let embed = new discord.MessageEmbed()
     .setDescription(`Pong - ${client.ws.ping}ms`)
     .setColor("RANDOM")
