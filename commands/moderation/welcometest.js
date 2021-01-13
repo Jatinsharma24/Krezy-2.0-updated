@@ -4,7 +4,7 @@ const db = require("quick.db");
 module.exports = {
   name: "welcometest",
   aliases: ["wtest"],
-  category: "<:mod:789590144650051604> moderation",
+  category: "moderation",
   description: "Test the welcome",
   run: async (client, message, args) => {
     let member = message.mentions.users.first() || message.author;
@@ -21,7 +21,7 @@ IF YOU WANT TO JOIN OUR CLAN YOU CAN APPLY IN <#731578491094433812>
 
 TAKE YOUR FAV ROLES FROM <#711852438927441920>
 
-CHILL AND ENJOY IN OUR <#737298789131485278>
+CHILL AND ENJOY IN OUR <#798117190271893506>
 𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
 USER :- ${member}
 SERVER :- ${member.guild}

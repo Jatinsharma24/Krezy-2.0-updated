@@ -4,7 +4,7 @@ const { url } = require("../../server.js")
 module.exports = {
   name: "rsetwelcomeimg",
   aliases: ["rsetwimage", "rsetwimg", "resetwelcomeimage"],
-  category: "<:mod:789590144650051604> moderation",
+  category: "moderation",
   usage: "prefix <new-prefix>",
   description: "Change the guild prefix",
   run: async (client, message, args) => {

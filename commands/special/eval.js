@@ -4,7 +4,7 @@ const client = new Discord.Client()
 module.exports = {
     name: 'eval',
     run: async (client, message, args) => {
-        if (message.author.id !== '682981714523586606') return message.channel.send("You do not have permission to use this command!");
+        if (message.author.id !== '700977648045785149') return message.channel.send("You do not have permission to use this command!");
         const embed = new MessageEmbed()
             .setTitle('Evaluating...')
         const msg = await message.channel.send(embed);
