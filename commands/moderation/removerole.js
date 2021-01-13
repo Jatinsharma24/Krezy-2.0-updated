@@ -2,8 +2,8 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
   name: "removerole",
-  aliases: ["rmrole", "-role"],
-  category: "<:mod:789590144650051604> moderation",
+  aliases: ["rrole", "+rrole"],
+  category: " moderation",
   description: "Remove role from any user",
   run: async (client, message, args) => {
     

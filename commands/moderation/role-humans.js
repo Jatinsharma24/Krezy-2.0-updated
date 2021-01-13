@@ -1,7 +1,7 @@
 const { Discord, MessageEmbed } = require("discord.js");
 module.exports={
     name: 'role_humans',
-    category: 'mod:789590144650051604> moderation',
+    category: 'moderation',
     run: async(bot,message,args)=>{
  if (!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send("Nice try, but you can't")
         if (!message.guild.me.hasPermission("MANAGE_ROLES")) return message.channel.send('I don\'t have permissions.')

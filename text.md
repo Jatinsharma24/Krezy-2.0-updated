@@ -16,3 +16,5 @@ var listener = app.listen(process.env.PORT, function () {
 setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 270000);
+
+36 require("./uptime.js");

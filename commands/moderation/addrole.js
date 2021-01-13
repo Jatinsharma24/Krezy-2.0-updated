@@ -2,8 +2,8 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
   name: "addrole",
-  aliases: ["role", "P!role"],
-  category: "<:mod:789590144650051604> moderation",
+  aliases: ["role", "+role"],
+  category: "moderation",
   description: "Add role to any user",
   run: async (client, message, args) => {
    if (!message.member.hasPermission("MANAGE_ROLES")) {
@@ -26,7 +26,7 @@ module.exports = {
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
-      .setDescription(`<a:ok_:731369076315652167>changed role for ${target.user.username} added ${arole}`)
+      .setDescription(`**ok changed role for ${target.user.username} added ${arole}**`)
       
       await message.channel.send(embed)
       

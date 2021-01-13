@@ -9,9 +9,9 @@ module.exports = {
     let embed = new discord.MessageEmbed()
     .setDescription(
     `
-Total Members - ${message.guild.memberCount}
-Humans - ${message.guild.members.cache.filter(m => !m.user.bot).size}
-Bots - ${message.guild.members.cache.filter(m => m.user.bot).size}`)
+**Total Members - ${message.guild.memberCount}**
+**Humans - ${message.guild.members.cache.filter(m => !m.user.bot).size}**
+**Bots - ${message.guild.members.cache.filter(m => m.user.bot).size}**`)
     .setColor("RANDOM")
     .setTimestamp(message.timestamp = Date.now())
     

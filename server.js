@@ -1,6 +1,28 @@
+const express = require("express");
+const fetch = require ('node-fetch')
+const app = express();
+
+
+app.get("/", (req, res) => {
+  res.send('Hello There , This is Giveaway Bot and now its online Thanks (BunnySupport)')
+});
+
+function pong() { 
+
+  
+console.log('Bunny is God')
+} 
+
+setInterval(pong, 60000);
+
+// listen for requests | Don't change this!
+const listener = app.listen(process.env.PORT, () => {
+  console.log("Listening on PORT " + listener.address().port);
+});
+
+
 const { prefix } = require("./config.json");
 const { config } = require("dotenv");
-const fetch = require("node-fetch");
 const db =require("quick.db");
 const moment = require("moment");
 const { CanvasSenpai } = require("canvas-senpai")
@@ -11,7 +33,6 @@ const client = new discord.Client({
 });
 
 
-require("./uptime.js");
 
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
