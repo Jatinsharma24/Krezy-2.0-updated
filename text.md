@@ -18,3 +18,11 @@ setInterval(() => {
 }, 270000);
 
 36 require("./uptime.js");
+
+ let channel = message.guild.channels.cache.find(x => x.name === "suggestion" || x.name === "suggestions");
+
+    if (!channel) {
+      return message.channel.send("there is no channel with name - suggestions");
+    }
+
+ message.channel.send("Sent Your Suggestion to " + `${channel}`);

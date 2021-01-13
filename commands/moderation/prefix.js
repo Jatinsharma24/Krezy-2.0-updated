@@ -11,7 +11,7 @@ module.exports = {
   run: async (client, message, args) => {
     //PERMISSION
     if(!message.member.hasPermission("ADMINISTRATOR")) {
-      return message.channel.send("<a:crossWrongYou are not allowed or do not have permission to change prefix")
+      return message.channel.send("You are not allowed or do not have permission to change prefix")
     }
     
     if(!args[0]) {
