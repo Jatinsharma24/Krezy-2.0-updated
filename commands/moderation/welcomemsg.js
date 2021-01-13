@@ -5,7 +5,7 @@ const { msg } = require("../../server.js")
 module.exports = {
   name: "setmessage",
   aliases: ["setwmessage", "setwmsg", "setmessage"],
-  category: "<:mod:789590144650051604> moderation",
+  category: "moderation",
   usage: "prefix <new-prefix>",
   description: "Change the guild prefix",
   run: async (client, message, args) => {
